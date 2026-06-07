@@ -1,0 +1,25 @@
+{
+  "name": "dashlytics",
+  "version": "0.1.0",
+  "private": true,
+  "packageManager": "npm@10.9.4",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "turbo dev",
+    "build": "prisma generate && turbo build",
+    "lint": "turbo lint",
+    "postinstall": "prisma generate",
+    "db:generate": "prisma generate",
+    "db:migrate": "prisma migrate dev",
+    "db:seed": "prisma db seed"
+  },
+  "devDependencies": {
+    "dotenv": "^16.4.7",
+    "prisma": "^7.8.0",
+    "tsx": "^4.19.4",
+    "turbo": "^2.9.16"
+  }
+}

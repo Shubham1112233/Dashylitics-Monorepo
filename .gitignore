@@ -1,0 +1,13 @@
+node_modules
+# Keep environment variables out of version control
+.env
+.env.local
+.env*.local
+
+apps/customer/lib/generated/prisma
+
+apps/admin/lib/generated/prisma
+
+.next
+.turbo
+.DS_Store
